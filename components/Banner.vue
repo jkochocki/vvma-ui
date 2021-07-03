@@ -1,7 +1,7 @@
 <template>
     <div id="banner" :style="bannerStyles">
         <!-- <b-img src="https://picsum.photos/1024/400/?image=41" fluid-grow alt="Responsive image"></b-img> -->
-        <b-img src="~assets/deskmates_builder.png" class="hero" fluid-grow alt="Responsive image"></b-img>
+        <b-img src="~assets/deskmates_builder_3-1.jpg" class="hero" fluid-grow alt="Responsive image"></b-img>
     </div>
 </template>
 
