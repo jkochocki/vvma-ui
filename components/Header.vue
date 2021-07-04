@@ -36,7 +36,7 @@
                         <b-dropdown-item link-class="dd-item" to="/partners">COMMUNITY PARTNERS</b-dropdown-item>
                     </b-dropdown>
                     <b-nav-item link-classes="navigation-item" to="/contact">CONTACT US</b-nav-item>
-                    <b-nav-item link-classes="navigation-item" to="/gallery">GALLERY</b-nav-item>
+                    <b-nav-item link-classes="navigation-item" to="/resources">RESOURCES</b-nav-item>
                 </b-nav>
             </b-col>
         </b-row>

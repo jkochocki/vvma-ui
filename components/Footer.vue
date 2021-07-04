@@ -2,22 +2,35 @@
     <div class="footer">
         <div>
             <b-container class="tight-container">
-                <b-row class="py-4">
-                    <b-col>
-                        <p>Office Address</p>
-                        <p>Tel: </p>
-                        <p>Email: </p>
+                <b-row cols="12" class="py-4">
+                    <b-col cols="4">
+                        <b-row>
+                            <b-col><small>Office Address: </small></b-col>
+                        </b-row>
+                        <b-row>
+                            <b-col><small>Tel: (339) 440-0133</small></b-col>
+                        </b-row><b-row>
+                            <b-col><small>Email: Barry@VolunteerVenturesMA.org</small></b-col>
+                        </b-row>
                     </b-col>
-                    <b-col>
-                        <p>Useful Links</p>
+                    <b-col cols="3">
+                        <b-row cols=1>
+                            <strong>Useful Links</strong>
+                        </b-row>
+                        <b-row cols=1>
+                            <router-link to="/resources">Volunteerism Resources</router-link>
+                        </b-row>
+                        <b-row cols=1>
+                            <router-link to="/contact">Contact</router-link>
+                        </b-row>
                     </b-col>
-                    <b-col cols="6">
+                    <b-col cols="5">
                         <b-row class="mb-2">
                             <b-col>
                                 <strong>Sign up for our newsletter:</strong>
                             </b-col>
                         </b-row>
-                        <b-row class="mb-2" no-gutters="true">
+                        <b-row class="mb-2">
                             <b-col style="padding-right: 15px">
                                 <b-form-input v-model="text" placeholder="First Name"></b-form-input>
                             </b-col>
@@ -49,7 +62,11 @@
 
 <script>
 export default {
-    
+    data() {
+        return {
+            text: ''
+        }
+    }
 }
 </script>
 
@@ -64,10 +81,12 @@ export default {
         color: #fff;
     }
 
-    .tight-container {
-        max-width: 50%;
-        margin: auto;
+    a {
+        color:#fff;
     }
-
+    a:hover {
+        color: #2B9720;
+        text-decoration: none;
+}
     
 </style>
