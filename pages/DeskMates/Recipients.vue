@@ -11,7 +11,7 @@
             <br>
             <b-row class="row-padding-bottom">
                 <b-col>
-                    <b-img-lazy rounded class="center-img img-max-height-500 col-stack-margin" src="~assets/recipient_photos/BGCD 2.jpg" fluid></b-img-lazy>
+                    <b-img-lazy rounded class="center-img img-max-height-500 col-stack-margin" src="~assets/recipient_photos/BGCD_2.jpg" fluid></b-img-lazy>
                 </b-col>
                 <b-col md="5" class="vert-center-contents">
                     <h5>
@@ -53,7 +53,7 @@
                     <b-img-lazy rounded class="center-img" src="~assets/recipient_photos/0.jpg" fluid></b-img-lazy>
                 </b-col>
                 <b-col>
-                    <b-img-lazy rounded class="center-img" src="~assets/recipient_photos/BGCD 4.jpg" fluid></b-img-lazy>
+                    <b-img-lazy rounded class="center-img" src="~assets/recipient_photos/BGCD_4.jpg" fluid></b-img-lazy>
                 </b-col>
                 <b-col>
                     <b-img-lazy rounded class="center-img" src="~assets/recipient_photos/BGCD desk pic.jpg" fluid></b-img-lazy>
