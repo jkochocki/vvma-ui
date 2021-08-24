@@ -48,7 +48,7 @@
 <script>
 import DonateBanner from '../components/DonateBanner.vue';
 import ArticleCard from '../components/ArticleCard.vue';
-import articles from '../assets/test-articles.json';
+import articles from '../assets/json/articles.json';
 export default {
     data() {
         return {

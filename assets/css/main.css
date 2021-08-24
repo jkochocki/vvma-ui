@@ -33,6 +33,27 @@ body
   display: block;
 }
 
+.vert-center-contents {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.row-padding-bottom {
+  padding-bottom: 50px;
+}
+
+.img-row > .col {
+  max-height: 250px;
+}
+
+.col-stack-margin {
+  margin-bottom: 15px;
+}
+
+.img-max-height-500 {
+  max-height: 500px;
+}
+
 .button-primary {
   background-color: #2B9720;
   color: #FFF;

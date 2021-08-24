@@ -10,7 +10,7 @@
                         <b-row>
                             <b-col><small>Tel: (339) 440-0133</small></b-col>
                         </b-row><b-row>
-                            <b-col><small>Email: Barry@VolunteerVenturesMA.org</small></b-col>
+                            <b-col><small>Email: admin@VolunteerVenturesMA.org</small></b-col>
                         </b-row>
                     </b-col>
                     <b-col cols="3">
@@ -30,17 +30,30 @@
                                 <strong>Sign up for our newsletter:</strong>
                             </b-col>
                         </b-row>
-                        <b-row class="mb-2">
+                        <b-row class="mb-22">
+                            <b-col>
+                                <p>Coming soon!</p>
+                            </b-col>
+                        </b-row>
+                        <!-- <b-row class="mb-2">
                             <b-col style="padding-right: 15px">
-                                <b-form-input v-model="text" placeholder="First Name"></b-form-input>
+                                <b-form-input v-model="text" required placeholder="First Name"></b-form-input>
                             </b-col>
                             <b-col>
-                                <b-form-input v-model="text" placeholder="Last Name"></b-form-input>
+                                <b-form-input v-model="text" required placeholder="Last Name"></b-form-input>
                             </b-col>
                         </b-row>
                         <b-row class="mb-2">
                             <b-col>
-                                <b-form-input v-model="text" placeholder="Email"></b-form-input>
+                                <b-form-input v-model="text" required placeholder="Email"></b-form-input>
+                            </b-col>
+                        </b-row>
+                        <b-row class="mb-2">
+                            <b-col style="padding-right: 15px">
+                                <b-form-input v-model="text" placeholder="City"></b-form-input>
+                            </b-col>
+                            <b-col>
+                                <b-form-input v-model="text" placeholder="State"></b-form-input>
                             </b-col>
                         </b-row>
                         <b-row>
@@ -52,9 +65,16 @@
                             <b-col>
                                 <b-button squared variant="success" to="/">Submit</b-button>
                             </b-col>
-                        </b-row>
+                        </b-row> -->
                     </b-col>
                 </b-row>
+                <hr>
+                <b-row>
+                    <b-col>
+                        VVMA
+                    </b-col>
+                </b-row>
+                <br>
             </b-container>
         </div>
     </div>
@@ -70,12 +90,16 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
     * {
         font-size: 16px;
     }
 
+    hr {
+        background-color: white;
+    }
+    
     .footer {
         background-color: #252594;
         color: #fff;

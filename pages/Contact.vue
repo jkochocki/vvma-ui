@@ -13,7 +13,7 @@
             <br>
             <b-row class="text-center">
                 <b-col>
-                    For more information about our work or any other inquiries, please contact Barry Glass at <strong>Barry@VolunteerVenturesMA.org</strong> or by phone at <strong>(339) 440-0133</strong>. 
+                    For more information about our work or any other inquiries, please reach out to <strong>admin@VolunteerVenturesMA.org</strong> or to Barry Glass by phone at <strong>(339) 440-0133</strong>. 
                 </b-col>
             </b-row>
             <br>

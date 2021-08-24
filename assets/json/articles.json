@@ -1,0 +1,19 @@
+[
+    {
+        "title": "Volunteer Highlight",
+        "subject": "Jakob Barton",
+        "tag": "jakobbarton",
+        "img": "~/assets/photos/Jake Barton Shop pic.jpg",
+        "text":"I saw the organization for what it was -- a vessel to help foster the educational journey...",
+        "createDate": "2021-8-24"
+
+    },
+    {
+        "title": "Spotlight on Community Partnership",
+        "subject": "Janet Iraola",
+        "tag": "janetiraola",
+        "img": "~/assets/photos/Janet I with desks.jpg",
+        "text":"...a passionate people-connector...",
+        "createDate": "2021-8-24"
+    }
+]

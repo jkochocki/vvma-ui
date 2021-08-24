@@ -1,12 +1,18 @@
 <template>
-    <b-card :title="article.title" :img-src="computedImg">
-        <b-card-text>
-            {{article.text}}
-        </b-card-text>
+    <b-card no-body :img-src="computedImg" @click="navigate(article.tag)">
+        <b-card-body :title="article.title + ': ' + article.subject" >
+            <b-card-text>
+                "{{article.text}}"
+            </b-card-text>
+        </b-card-body>
+        <b-card-footer>
+            <small>{{article.createDate | formatDate }}</small>
+        </b-card-footer>
     </b-card>
 </template>
 
 <script>
+import { router } from 'vue'
 export default {
     props: {
         article: {
@@ -19,6 +25,37 @@ export default {
         computedImg() {
             return require('~/assets/' + this.article.img.replace(/^~\/assets\//g, ''))
         }
+    },
+    methods: {
+        navigate(url) {
+            this.$router.push({path: 'articles/' + url});
+        }
     }
 }
 </script>
+
+<style scoped>
+    .card {
+        max-width:350px;
+    }
+    .card:hover {
+        cursor: pointer;
+    }
+
+    .cart-title {
+        font-size: 1.25rem;
+    }
+
+    .card-deck > .card:first-child {
+        margin-left: auto !important;
+    }
+
+    .card-deck > .card:last-child {
+        margin-right: auto !important;
+    }
+
+    .card-footer {
+        background-color: white;
+        border: none;
+    }
+</style>

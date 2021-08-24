@@ -7,10 +7,10 @@
                 &emsp; Volunteer Ventures of MA
             </b-navbar-brand>
             <b-navbar-nav class="ml-auto mr-5">
-                <b-nav-item href="#">
+                <b-nav-item :href="instagram">
                     <b-icon icon="instagram" scale="1.5" class="pr-4 nav-icon"></b-icon>
                 </b-nav-item>
-                <b-nav-item href="#">
+                <b-nav-item :href="facebook">
                     <b-icon icon="facebook" scale="1.5" class="pr-4 nav-icon"></b-icon>
                 </b-nav-item>
                 <b-nav-item href="#">
@@ -47,7 +47,9 @@
 export default {
     data() {
         return {
-            showNavbar: false
+            showNavbar: false,
+            instagram: 'https://instagram.com/VolVenMA2021',
+            facebook: 'https://facebook.com/volunteerventuresma'
         };
     },
     methods: {
