@@ -40,12 +40,6 @@
             </b-row>
             <br>
             <b-row>
-                <b-col>
-                    
-                </b-col>
-            </b-row>
-            <br>
-            <b-row>
                 <b-col md="6">
                     <strong>
                         What did you do with Desk Mates?

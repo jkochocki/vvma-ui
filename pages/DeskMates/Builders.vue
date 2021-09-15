@@ -9,9 +9,10 @@
             </b-row>
             <br>
             <b-row>
-                <b-col md="5" class="offset-1">
+                
+                <b-col md="6" align-self="center">
                    <h5>
-                        Adult groups from:
+                        Adult groups:
                    </h5>
                     <ul>
                         <li>
@@ -24,13 +25,32 @@
                             Temple Shir Tikvah, Winchester
                         </li>
                         <li>     
-                            **Gilbane Construction (project with Rebuilding Together Boston)
+                            Winchester Unitarian Society
                         </li>
                     </ul>
                 </b-col>
-                <b-col md="5">
+                <b-col align-self="center">
+                    <b-img-lazy rounded class="center-img img-max-height-500" src="~assets/builder_photos/IMG_0820.jpg" fluid></b-img-lazy>
+                </b-col>
+            </b-row>
+            <br>
+            <br>
+            <b-row class="row-padding-bottom">
+                <b-col lg="6">
+                    <b-img-lazy rounded class="center-img col-stack-margin" src="~assets/builder_photos/IMG_1194.jpg" fluid></b-img-lazy>
+                </b-col>
+                <b-col lg="6">
+                    <b-img-lazy rounded class="center-img" src="~assets/builder_photos/IMG_1299.jpg" fluid></b-img-lazy>
+                </b-col>
+            </b-row>
+            <br>
+            <b-row>
+                <b-col align-self="center">
+                    <b-img-lazy rounded class="center-img img-max-height-500" src="~assets/builder_photos/IMG_0208.jpg" fluid></b-img-lazy>
+                </b-col>
+                <b-col md="5" align-self="center">
                     <h5>
-                        Youth and teen groups from:
+                        Youth and teen groups:
                     </h5>
                     <ul>
                         <li>
@@ -67,7 +87,7 @@
                             Temple Sinai, Sharon
                         </li>
                         <li>
-                            Winchester Unitarian Society
+                            Winchester Unitarian Society WUSY-G
                         </li>
                     </ul>
                 </b-col>
@@ -78,17 +98,40 @@
                     …and over 25 additional  individual builders, younger and older, from throughout Greater Boston
                 </b-col>
             </b-row>
+            
+            <!-- <b-button @click="showGallery = true">Click</b-button>
+           
+           <Gallery v-if="showGallery"></Gallery> -->
         </div>
     </div>
-</template>
+</template> 
 
 <script>
+import Gallery from '../../components/Gallery.vue';
+    import photos from '../../assets/json/builder_images.json';
+
 export default {
     
+    data() {
+        return {
+            showGallery: false,
+            photos
+        }
+    },
+    components: {
+        Gallery
+    },
+    methods: {
+      adjustAssetPath(path) {
+        return require('~/assets/' + path.replace(/^~\/assets\//g, ''))
+      }
+    }
 }
 </script>
 
 
 <style>
-    
+    ul {
+        list-style-type: none;
+    }
 </style>
