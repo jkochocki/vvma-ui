@@ -46,7 +46,7 @@
             <br>
             <b-row>
                 <b-col align-self="center">
-                    <b-img-lazy rounded class="center-img img-max-height-500" src="~assets/builder_photos/IMG_0208.jpg" fluid></b-img-lazy>
+                    <b-img-lazy rounded class="center-img img-max-height-500" src="~assets/builder_photos/img0208.jpg" fluid></b-img-lazy>
                 </b-col>
                 <b-col md="5" align-self="center">
                     <h5>

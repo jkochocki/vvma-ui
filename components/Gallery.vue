@@ -22,7 +22,7 @@
     </div>
     <div class="gallery-backdrop"></div> -->
     <div >
-      <img class="image" v-for="(image, i) in images" :src="image" :key="i" @click="index = i">
+      <!-- <img class="image" v-for="(image, i) in images" :src="image" :key="i" @click="index = i"> -->
       <!-- <vue-gallery-slideshow :images="images" :index="index" @close="index = null"></vue-gallery-slideshow> -->
     </div>
   </div>
@@ -30,30 +30,30 @@
 
 <script>
 // import VueGallerySlideshow from 'vue-gallery-slideshow';
-import images from '../assets/json/builder_images.json';
+// import images from '../assets/json/builder_images.json';
   export default {
-    data() {
-      return {
-        slide: 0,
-        sliding: null,
-        images,
-        index
-      }
-    },
-    components: {
-      // VueGallerySlideshow
-    },
-    methods: {
-      onSlideStart(slide) {
-        this.sliding = true
-      },
-      onSlideEnd(slide) {
-        this.sliding = false
-      },
-      adjustAssetPath(path) {
-        return require('~/assets/' + path.replace(/^~\/assets\//g, ''))
-      }
-    }
+    // data() {
+    //   return {
+    //     slide: 0,
+    //     sliding: null,
+    //     images,
+    //     index
+    //   }
+    // },
+    // components: {
+    //   // VueGallerySlideshow
+    // },
+    // methods: {
+    //   onSlideStart(slide) {
+    //     this.sliding = true
+    //   },
+    //   onSlideEnd(slide) {
+    //     this.sliding = false
+    //   },
+    //   adjustAssetPath(path) {
+    //     return require('~/assets/' + path.replace(/^~\/assets\//g, ''))
+    //   }
+    // }
   }
 </script>
 
