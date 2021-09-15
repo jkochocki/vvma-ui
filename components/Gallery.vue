@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import VueGallerySlideshow from 'vue-gallery-slideshow';
+// import VueGallerySlideshow from 'vue-gallery-slideshow';
 import images from '../assets/json/builder_images.json';
   export default {
     data() {
@@ -41,7 +41,7 @@ import images from '../assets/json/builder_images.json';
       }
     },
     components: {
-      VueGallerySlideshow
+      // VueGallerySlideshow
     },
     methods: {
       onSlideStart(slide) {
