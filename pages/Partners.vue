@@ -18,7 +18,11 @@
 
 <script>
 export default {
-    
+    created() {
+        this.$store.commit('setBannerImg', {
+            name: 'group_build_pan'
+        });
+    }
 }
 </script>
 

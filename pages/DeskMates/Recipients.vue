@@ -7,6 +7,11 @@
                     <h4 class="center-text">Recipients</h4>
                 </b-col>
             </b-row>
+            <b-row>
+                <b-col offset="10">
+                    <a class="dummy-link"><small @click="scrollTo('gallery', -500)">Jump to Gallery</small></a>
+                </b-col>
+            </b-row>
             <br>
             <br>
             <b-row class="row-padding-bottom">
@@ -116,12 +121,38 @@
                     </ul>
                 </b-col>
             </b-row>
+            <br>
+            <hr>
+            <br>
+            <div ref="gallery">
+                <Gallery :photos="photos"></Gallery>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
+import Gallery from '../../components/Gallery.vue';
+import scrollTo from '../../mixins/scrollTo.js';
+import photos from '../../assets/json/recipient_images.json';
+
 export default {
+    data() {
+        return {
+            photos
+        }
+    },
+    components: {
+        Gallery
+    },
+    mixins: [
+        scrollTo
+    ],
+    created() {
+        this.$store.commit('setBannerImg', {
+            name: 'deskmates_builder_3-1'
+        });
+    }
 }
 </script>
 

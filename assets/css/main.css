@@ -28,6 +28,10 @@ body
   text-align: center;
 }
 
+.text-italic {
+  font-style: italic;
+}
+
 .center-img {
   margin: auto;
   display: block;
@@ -52,6 +56,14 @@ body
 
 .img-max-height-500 {
   max-height: 500px;
+}
+
+.dummy-link {
+  color: #007bff;
+}
+
+.dummy-link:hover {
+  cursor: pointer;
 }
 
 .button-primary {

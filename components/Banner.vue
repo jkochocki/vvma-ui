@@ -1,25 +1,22 @@
 <template>
     <div id="banner" :style="bannerStyles">
         <!-- <b-img src="https://picsum.photos/1024/400/?image=41" fluid-grow alt="Responsive image"></b-img> -->
-        <b-img src="~assets/deskmates_builder_3-1.jpg" class="hero" fluid-grow alt="Responsive image"></b-img>
+        <b-img :src="require(`~/assets/photos/banner/${bannerImgName}.jpg`)" class="hero" fluid-grow alt="Responsive image"></b-img>
     </div>
 </template>
 
 <script>
+
 export default {
     data() {
         return {
-            bannerStyles: {}
+            bannerStyles: {},
+            bannerImg: 'deskmates_builder_3-1'
         }
     },
-    mounted() {
-        this.offsetHeight();
-    },
-    methods: {
-        offsetHeight() {
-            console.log(this.$refs);
-            // let height = this.$refs.header.clientHeight + 'px';
-            // Vue.set(this.bannerStyles, 'height', height);
+    computed: {
+        bannerImgName() {
+             return this.$store.getters.imageName;
         }
     }
 }

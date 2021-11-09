@@ -10,11 +10,12 @@
             </b-row>
             <hr>
             <br>
+            
             <b-row class="text-center">
                 <b-col>
                     We are currently taking donations via
                         <div>
-                            Venmo: <strong>@VolunteerVenturesMA</strong>
+                            Venmo:  <VenmoButton></VenmoButton>
                         </div>
                         <div>
                             Physical checks mailed to <strong>Volunteer Ventures MA, 4 Bryant Road, Lexington, MA 02420</strong>
@@ -37,8 +38,21 @@
 </template>
 
 <script>
+import VenmoButton from '../components/VenmoButton.vue';
 export default {
-    
+    data() {
+        return {
+            
+        }
+    },
+    created() {
+        this.$store.commit('setBannerImg', {
+            name: 'group_build_pan'
+        });
+    },
+    components: {
+        VenmoButton
+    }
 }
 </script>
 

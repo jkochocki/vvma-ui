@@ -23,7 +23,8 @@
                 <b-nav pills align-content="center" align="center">
                     <b-nav-item link-classes="navigation-item" to="/">HOME</b-nav-item>
                     <b-dropdown id="nav-dd" toggle-class="nav-dd" menu-class="nav-dd-menu" text="DESK MATES" class="m-md-2">
-                        <b-dropdown-item link-class="dd-item" to="/deskmates/about">ABOUT</b-dropdown-item>
+                        <b-dropdown-item link-class="dd-item" to="/deskmates/howitstarted">HOW IT STARTED</b-dropdown-item>
+                        <b-dropdown-item link-class="dd-item" to="/deskmates/howitworks">HOW IT WORKS</b-dropdown-item>
                         <b-dropdown-item link-class="dd-item" to="/deskmates/builders">BUILDERS</b-dropdown-item>
                         <b-dropdown-item link-class="dd-item" to="/deskmates/recipients">RECIPIENTS</b-dropdown-item>
                     </b-dropdown>
@@ -36,7 +37,9 @@
                         <b-dropdown-item link-class="dd-item" to="/partners">COMMUNITY PARTNERS</b-dropdown-item>
                     </b-dropdown>
                     <b-nav-item link-classes="navigation-item" to="/contact">CONTACT US</b-nav-item>
-                    <b-nav-item link-classes="navigation-item" to="/resources">RESOURCES</b-nav-item>
+                    <b-dropdown id="nav-dd" toggle-class="nav-dd" menu-class="nav-dd-menu" text="RESOURCES" class="m-md-2">
+                        <b-dropdown-item link-class="dd-item" to="/resources/events">EVENTS CALENDAR</b-dropdown-item>
+                    </b-dropdown>
                 </b-nav>
             </b-col>
         </b-row>
@@ -55,11 +58,11 @@ export default {
     methods: {
         handleScroll() {
             window.pageYOffset > 0 ? this.showNavbar = true: this.showNavbar = false;
-            console.log(this.showNavbar);
         }
     },
     beforeMount() {
         window.addEventListener("scroll", this.handleScroll);
+        
     },
     beforeDestroy() {
         window.removeEventListener("scroll", this.handleScroll);
@@ -181,4 +184,12 @@ export default {
     color:#DD6F40 !important;
 }
 
+@media screen and (max-width: 1180px) {
+  .nav-pills {
+      margin-top: 30px;
+  }
+  .nav-opaque > #navigation {
+      height: 50px;
+  }
+}
 </style>

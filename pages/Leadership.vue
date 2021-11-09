@@ -18,21 +18,12 @@
                     <div>Secretary</div>
                 </b-col>
                 <b-col md="6" lg="3">
-                    <strong>MAB Community Services</strong>
-                </b-col>
-                <b-col md="6" lg="3">
                     <strong>Jonathan Budd</strong>
                     <div>Bookkeeper</div>
                 </b-col>
                 <b-col md="6" lg="3">
-                    <strong>Ration LLC</strong>
-                </b-col>
-                <b-col md="6" lg="3">
                     <strong>Howard Goldstein</strong>
                     <div>Vice President, Finance</div>
-                </b-col>
-                <b-col md="6" lg="3">
-                    <strong>Cortlandt Private Capital LLC</strong>
                 </b-col>
             </b-row>
         </b-container>
@@ -61,7 +52,7 @@
                     <div>Wall Street Horizon</div>
                 </b-col>
                 <b-col md="6" lg="3">
-                    <strong>Heide Star</strong>
+                    <strong>Heidi Star</strong>
                     <div>Community Volunteer</div>
                 </b-col>
                 <b-col md="6" lg="3">
@@ -101,10 +92,16 @@
                     <strong>Robert Ruxin, Esq.</strong>
                 </b-col>
                 <b-col md="6" lg="3">
+                    <strong>Marc Seigle</strong>
+                </b-col>
+                <b-col md="6" lg="3">
                     <strong>Ellen Sturgis</strong>
                 </b-col>
                 <b-col md="6" lg="3">
                     <strong>Danny Watt</strong>
+                </b-col>
+                <b-col md="6" lg="3">
+                    <strong>Leslie Zales</strong>
                 </b-col>
             </b-row>
         </b-container>
@@ -118,6 +115,11 @@ export default {
         return {
             mainProps: { blank: true, blankColor: '#777', width: 200, height: 200, class: 'm2' }
         }
+    },
+    created() {
+        this.$store.commit('setBannerImg', {
+            name: 'group_build_pan'
+        });
     }
 }
 </script>

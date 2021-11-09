@@ -7,9 +7,14 @@
                     <h4 class="center-text">Our Desk Mates Builders</h4>
                 </b-col>
             </b-row>
+            <b-row>
+                <b-col offset="10">
+                    <a class="dummy-link"><small @click="scrollTo('gallery', 200)">Jump to Gallery</small></a>
+                </b-col>
+            </b-row>
+            <br>
             <br>
             <b-row>
-                
                 <b-col md="6" align-self="center">
                    <h5>
                         Adult groups:
@@ -98,33 +103,48 @@
                     …and over 25 additional  individual builders, younger and older, from throughout Greater Boston
                 </b-col>
             </b-row>
-            
-            <!-- <b-button @click="showGallery = true">Click</b-button>
-           
-           <Gallery v-if="showGallery"></Gallery> -->
+            <br>
+            <hr>
+            <br>
+            <div ref="gallery">
+                <Gallery :photos="photos"></Gallery>
+            </div>
         </div>
     </div>
 </template> 
 
 <script>
 import Gallery from '../../components/Gallery.vue';
-    import photos from '../../assets/json/builder_images.json';
+import scrollTo from '../../mixins/scrollTo.js';
+import photos from '../../assets/json/builder_images.json';
 
 export default {
-    
     data() {
         return {
-            showGallery: false,
             photos
         }
     },
     components: {
         Gallery
     },
+    mixins: [
+        scrollTo
+    ],
     methods: {
-      adjustAssetPath(path) {
-        return require('~/assets/' + path.replace(/^~\/assets\//g, ''))
-      }
+        adjustAssetPath(path) {
+            return require('~/assets/' + path.replace(/^~\/assets\//g, ''))
+        }
+    },
+    created() {
+        this.$store.commit('setBannerImg', {
+            name: 'deskmates_builders_pan'
+        });
+    },
+    beforeMount() {
+        window.addEventListener("scroll", this.handleScroll);
+    },
+    beforeDestroy() {
+        window.removeEventListener("scroll", this.handleScroll);
     }
 }
 </script>

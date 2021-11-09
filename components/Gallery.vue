@@ -1,59 +1,53 @@
 <template>
   <div>
-    <!-- <div class="gallery">
-      <div class="vvma-carousel">
-        <b-carousel
-      id="carousel-1"
-      v-model="slide"
-      controls
-      indicators
-      background="#ababab"
-      img-height="85vh"
-      style="text-shadow: 1px 1px 2px #333;"
-      @sliding-start="onSlideStart"
-      @sliding-end="onSlideEnd"
-    >
-
-    <b-carousel-slide v-for="(image, i) in photos" :key="i" :img-src="adjustAssetPath(image)">
-    </b-carousel-slide>
-
-    </b-carousel>
+    <div id="gallery">
+      <div class="thumbnails">
+        <img class="image thumbnail" v-for="(image, i) in images" :src="image" :key="i" @click="index = i">
       </div>
-    </div>
-    <div class="gallery-backdrop"></div> -->
-    <div >
-      <!-- <img class="image" v-for="(image, i) in images" :src="image" :key="i" @click="index = i"> -->
-      <!-- <vue-gallery-slideshow :images="images" :index="index" @close="index = null"></vue-gallery-slideshow> -->
+      <client-only placeholder="Loading...">
+        <vue-gallery-slideshow :images="images" :index="index" @close="index = null"></vue-gallery-slideshow>
+      </client-only>
     </div>
   </div>
 </template>
 
 <script>
-// import VueGallerySlideshow from 'vue-gallery-slideshow';
-// import images from '../assets/json/builder_images.json';
+import VueGallerySlideshow from 'vue-gallery-slideshow';
   export default {
-    // data() {
-    //   return {
-    //     slide: 0,
-    //     sliding: null,
-    //     images,
-    //     index
-    //   }
-    // },
-    // components: {
-    //   // VueGallerySlideshow
-    // },
-    // methods: {
-    //   onSlideStart(slide) {
-    //     this.sliding = true
-    //   },
-    //   onSlideEnd(slide) {
-    //     this.sliding = false
-    //   },
-    //   adjustAssetPath(path) {
-    //     return require('~/assets/' + path.replace(/^~\/assets\//g, ''))
-    //   }
-    // }
+    data() {
+      return {
+       
+        images: [],
+        index: null
+      }
+    },
+    props: {
+      photos: {
+        type: Array
+      }
+    },
+    components: {
+      VueGallerySlideshow
+    },
+    methods: {
+      onSlideStart(slide) {
+        this.sliding = true
+      },
+      onSlideEnd(slide) {
+        this.sliding = false
+      },
+      adjustAssetPath(path) {
+        return require('~/assets/' + path.replace(/^~\/assets\//g, ''))
+      },
+      loadImages() {
+        for (let image of this.photos) {
+          this.images.push(this.adjustAssetPath(image));
+        }
+      }
+    },
+    created() {
+      this.loadImages();
+    }
   }
 </script>
 
@@ -80,5 +74,26 @@
   .vvma-carousel {
     width: 85%;
     height: 85%;
+  }
+
+  .thumbnails {
+    text-align: center
+  }
+
+  .thumbnail {
+    max-height: 125px;
+    margin: 3px;
+    padding:1px;
+  }
+
+  .thumbnail:hover {
+    cursor: pointer;
+    border: 2px solid darkblue;
+    border-radius: 2px;
+  }
+
+  .vgs {
+    background-color: rgba(0,0,0,.97);
+    padding-top: 10vh;
   }
 </style>

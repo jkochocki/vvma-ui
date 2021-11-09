@@ -28,6 +28,11 @@ export default {
         return {
             articles: articles
         }
+    },
+    created() {
+        this.$store.commit('setBannerImg', {
+            name: 'group_build_pan'
+        });
     }
 };
 </script>
