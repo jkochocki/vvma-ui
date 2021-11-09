@@ -39,8 +39,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/bootstrap
-    'bootstrap-vue/nuxt',
-    'nuxt-page-transition-and-anchor-handler'
+    'bootstrap-vue/nuxt'
   ],
 
   bootstrapVue: {
