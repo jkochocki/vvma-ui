@@ -33,7 +33,6 @@
                         <b-dropdown-item link-class="dd-item" to="/our-mission">OUR MISSION</b-dropdown-item>
                         <b-dropdown-item link-class="dd-item" to="/barry">BARRY GLASS</b-dropdown-item>
                         <b-dropdown-item link-class="dd-item" to="/leadership">LEADERSHIP</b-dropdown-item>
-                        <b-dropdown-item link-class="dd-item" to="/sponsors">SPONSORS</b-dropdown-item>
                         <b-dropdown-item link-class="dd-item" to="/partners">COMMUNITY PARTNERS</b-dropdown-item>
                     </b-dropdown>
                     <b-nav-item link-classes="navigation-item" to="/contact">CONTACT US</b-nav-item>

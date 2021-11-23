@@ -3,11 +3,6 @@ body
   font-family: 'Montserrat', sans-serif;
 }
 
-.row {
-  /* padding-top: 15px;
-  padding-bottom: 15px; */
-}
-
 .clip-left {
   transform: skewY(-1deg);
   background-color: #252594;
@@ -46,12 +41,21 @@ body
   padding-bottom: 50px;
 }
 
+.row-narrow {
+  width: 70%;
+  margin: auto;
+}
+
 .img-row > .col {
   max-height: 250px;
 }
 
 .col-stack-margin {
   margin-bottom: 15px;
+}
+
+.col-stack-margin-lg {
+  margin-bottom: 30px;
 }
 
 .img-max-height-500 {

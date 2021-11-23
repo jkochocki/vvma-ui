@@ -46,7 +46,7 @@
             <br>
             <b-row class="text-justify">
                 <b-col>
-                    Your donations are tax deductible pending our approval as a 501(c)(3) tax exempt organization.
+                    Your donations are tax deductible pending our approval as a 501(c)(3) tax exempt public charity.
                 </b-col>
             </b-row>
             <br>

@@ -36,28 +36,21 @@
             <b-row>
                 <b-col md="6" lg="3">
                     <strong>Peter Feinmann</strong>
-                    <div>Feinmann, Inc.</div>
                 </b-col>
                 <b-col md="6" lg="3">
                     <strong>Catharyn Gildesgame</strong>
-                    <div>Community Volunteer</div>
-                    <div>Member of Boards of Directors (Combined Jewish Philanthropies, Jewish Community Relations Council, 2 Life Communities)</div>
                 </b-col>
                 <b-col md="6" lg="3">
                     <strong>Neva Goldstein</strong>
-                    <div>Community Volunteer</div>
                 </b-col>
                 <b-col md="6" lg="3">
                     <strong>Barry Star</strong>
-                    <div>Wall Street Horizon</div>
                 </b-col>
                 <b-col md="6" lg="3">
                     <strong>Heidi Star</strong>
-                    <div>Community Volunteer</div>
                 </b-col>
                 <b-col md="6" lg="3">
                     <strong>Richard Udell</strong>
-                    <div>Environmental Justice Attorney</div>
                 </b-col>
             </b-row>
         </b-container>

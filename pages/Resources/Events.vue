@@ -74,7 +74,7 @@ Ambrose School, Winchester
             </b-row>
             <b-row>
                 <b-col offset=1>
-                    At-home build event with Gann Academy, Waltham
+                    At-home build with Gann Academy, Waltham
                 </b-col>
             </b-row>
             <br>
