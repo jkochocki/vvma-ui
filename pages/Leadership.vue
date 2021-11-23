@@ -88,6 +88,9 @@
                     <strong>Marc Seigle</strong>
                 </b-col>
                 <b-col md="6" lg="3">
+                    <strong>Howard Seplowitz</strong>
+                </b-col>
+                <b-col md="6" lg="3">
                     <strong>Ellen Sturgis</strong>
                 </b-col>
                 <b-col md="6" lg="3">
