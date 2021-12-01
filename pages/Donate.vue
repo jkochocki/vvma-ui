@@ -29,8 +29,14 @@
                     We're so excited to continue work on Desk Mates and to develop other new, innovative projects.
                 </b-col>
             </b-row>
+            <br>
             <hr>
-
+            <br>
+            <b-row class="text-center">
+                <b-col class="text-italic">
+                    Volunteer Ventures MA Inc. is a qualified 501(c)(3) tax exempt organization.
+                </b-col>
+            </b-row>
             <br>
             <br>
         </b-container>

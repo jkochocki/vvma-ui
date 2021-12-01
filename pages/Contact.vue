@@ -17,6 +17,7 @@
                 </b-col>
             </b-row>
             <br>
+            <hr>
             <br>
             <b-row class="text-justify">
                 <b-col>
@@ -44,9 +45,12 @@
                 </b-col>
             </b-row>
             <br>
-            <b-row class="text-justify">
-                <b-col>
-                    Your donations are tax deductible pending our approval as a 501(c)(3) tax exempt public charity.
+            <hr>
+            <br>
+            
+            <b-row class="text-center">
+                <b-col class="text-italic">
+                    Volunteer Ventures MA Inc. is a qualified 501(c)(3) tax exempt organization.
                 </b-col>
             </b-row>
             <br>

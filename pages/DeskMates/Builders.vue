@@ -35,23 +35,23 @@
                     </ul>
                 </b-col>
                 <b-col align-self="center">
-                    <b-img-lazy rounded class="center-img img-max-height-500" src="~assets/builder_photos/IMG_0820.jpg" fluid></b-img-lazy>
+                    <b-img-lazy rounded class="center-img img-max-height-500" src="~assets/builder-photos/IMG_0820.jpg" fluid></b-img-lazy>
                 </b-col>
             </b-row>
             <br>
             <br>
             <b-row class="row-padding-bottom">
                 <b-col lg="6">
-                    <b-img-lazy rounded class="center-img col-stack-margin" src="~assets/builder_photos/IMG_1194.jpg" fluid></b-img-lazy>
+                    <b-img-lazy rounded class="center-img col-stack-margin" src="~assets/builder-photos/IMG_1194.jpg" fluid></b-img-lazy>
                 </b-col>
                 <b-col lg="6">
-                    <b-img-lazy rounded class="center-img" src="~assets/builder_photos/IMG_1299.jpg" fluid></b-img-lazy>
+                    <b-img-lazy rounded class="center-img" src="~assets/builder-photos/IMG_1299.jpg" fluid></b-img-lazy>
                 </b-col>
             </b-row>
             <br>
             <b-row>
                 <b-col align-self="center">
-                    <b-img-lazy rounded class="center-img img-max-height-500" src="~assets/builder_photos/img0208.jpg" fluid></b-img-lazy>
+                    <b-img-lazy rounded class="center-img img-max-height-500" src="~assets/builder-photos/img0208.jpg" fluid></b-img-lazy>
                 </b-col>
                 <b-col md="5" align-self="center">
                     <h5>
@@ -90,6 +90,9 @@
                         </li>
                         <li>
                             Temple Emunah, Lexington 7th grade
+                        </li>
+                        <li>
+                            Temple Shir Tikvah Winchester 5th Grade Tikkun Olam Corps
                         </li>
                         <li>
                             Temple Sinai, Sharon

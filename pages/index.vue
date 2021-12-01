@@ -57,6 +57,11 @@ export default {
     },
     components: {
         DonateBanner
+    },
+    created() {
+        this.$store.commit('setBannerImg', {
+            name: 'group_build_pan'
+        });
     }
 };
 </script>

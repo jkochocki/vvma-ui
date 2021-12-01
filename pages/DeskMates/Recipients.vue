@@ -4,7 +4,7 @@
             <br>
             <b-row>
                 <b-col>
-                    <h4 class="center-text">Recipients</h4>
+                    <h4 class="center-text">Community Partner Recipients</h4>
                 </b-col>
             </b-row>
             <b-row>
@@ -16,7 +16,7 @@
             <br>
             <b-row class="row-padding-bottom">
                 <b-col>
-                    <b-img-lazy rounded class="center-img img-max-height-500 col-stack-margin" src="~assets/recipient_photos/BGCD_2.jpg" fluid></b-img-lazy>
+                    <b-img-lazy rounded class="center-img img-max-height-500 col-stack-margin" src="~assets/recipient-photos/BGCD_2.jpg" fluid></b-img-lazy>
                 </b-col>
                 <b-col md="5" class="vert-center-contents">
                     <h5>
@@ -55,13 +55,13 @@
             </b-row>
             <b-row class="row-padding-bottom">
                 <b-col>
-                    <b-img-lazy rounded class="center-img" src="~assets/recipient_photos/0.jpg" fluid></b-img-lazy>
+                    <b-img-lazy rounded class="center-img" src="~assets/recipient-photos/0.jpg" fluid></b-img-lazy>
                 </b-col>
                 <b-col>
-                    <b-img-lazy rounded class="center-img" src="~assets/recipient_photos/BGCD_4.jpg" fluid></b-img-lazy>
+                    <b-img-lazy rounded class="center-img" src="~assets/recipient-photos/BGCD_4.jpg" fluid></b-img-lazy>
                 </b-col>
                 <b-col>
-                    <b-img-lazy rounded class="center-img" src="~assets/recipient_photos/BGCD desk pic.jpg" fluid></b-img-lazy>
+                    <b-img-lazy rounded class="center-img" src="~assets/recipient-photos/BGCD desk pic.jpg" fluid></b-img-lazy>
                 </b-col>
             </b-row>
             <b-row class="row-padding-bottom">
@@ -100,12 +100,12 @@
                     </ul>
                 </b-col>
                 <b-col class="lg-img-col">
-                    <b-img-lazy rounded class="center-img img-max-height-500" src="~assets/recipient_photos/IMG_2228.jpg" fluid></b-img-lazy>
+                    <b-img-lazy rounded class="center-img img-max-height-500" src="~assets/recipient-photos/IMG_2228.jpg" fluid></b-img-lazy>
                 </b-col>
             </b-row>
             <b-row>
                 <b-col class="lg-img-col">
-                    <b-img-lazy rounded class="center-img img-max-height-500 col-stack-margin" src="~assets/recipient_photos/IMG_1493.jpg" fluid></b-img-lazy>
+                    <b-img-lazy rounded class="center-img img-max-height-500 col-stack-margin" src="~assets/recipient-photos/IMG_1493.jpg" fluid></b-img-lazy>
                 </b-col>
                 <b-col md="5" class="offset-1 vert-center-contents">
                     <h5>

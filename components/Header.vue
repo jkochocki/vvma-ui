@@ -3,8 +3,8 @@
         <b-navbar>
             <b-navbar-brand class="ml-5 vv-brand">
                 <b-img src="~assets/VVMA logo RG.png" height="125" alt="Responsive image"></b-img>
-                <!-- <p style="display: block">Volunteer Ventures of MA</p> --> 
-                &emsp; Volunteer Ventures of MA
+                <span class="vv-brand-text">&emsp; Volunteer Ventures MA</span>
+                <span class="vv-brand-sub"><small>&emsp; Building community through service</small></span>
             </b-navbar-brand>
             <b-navbar-nav class="ml-auto mr-5">
                 <b-nav-item :href="instagram">
@@ -103,6 +103,17 @@ export default {
 
 .vv-brand {
     font-size: 1.5rem !important;
+    max-width: 500px;
+}
+
+.vv-brand-text {
+    top: -15px;
+}
+.vv-brand-sub {
+    font-size: 1rem !important;
+    position: relative;
+    top: 20px;
+    left: -64%;
 }
 
 .vv-brand:focus, .vv-brand:hover {
@@ -183,6 +194,10 @@ export default {
     color:#DD6F40 !important;
 }
 
+.nav-pills {
+    margin-top: 10px;
+}
+
 @media screen and (max-width: 1180px) {
   .nav-pills {
       margin-top: 30px;
@@ -191,4 +206,14 @@ export default {
       height: 50px;
   }
 }
+
+@media screen and (max-width: 790px) {
+  .nav-pills {
+      margin-top: 40px;
+  }
+  .nav-opaque > #navigation {
+      height: 100px;
+  }
+}
+
 </style>
