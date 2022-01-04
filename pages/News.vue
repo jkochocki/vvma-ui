@@ -11,8 +11,9 @@
                 </b-col>
             </b-row>
             <br>
-            <b-card-group deck>
-                <ArticleCard v-for="(article, i) in articles" :key="i" :article="article"></ArticleCard>
+            <b-card-group deck class="row-gap">
+                <ArticleCard v-for="(article, i) in articles" :key="i" :article="article" :isPost="false"></ArticleCard>
+                <ArticleCard v-for="(post, j) in posts" :key="j" :post="post" :isPost="true"></ArticleCard>
             </b-card-group>
             <br>
             <br>
@@ -23,7 +24,12 @@
 <script>
 import ArticleCard from '../components/ArticleCard.vue';
 import articles from '../assets/json/articles.json';
+import { getPosts } from '../api/posts.js';
 export default {
+    async asyncData() {
+        const posts = await getPosts(4);
+        return { posts: posts }
+    },
     data() {
         return {
             articles: articles
@@ -38,5 +44,7 @@ export default {
 </script>
 
 <style>
-
+.row-gap {
+    row-gap: 30px;
+}
 </style>

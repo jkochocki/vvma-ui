@@ -1,34 +1,54 @@
 <template>
-    <b-card no-body :img-src="computedImg" @click="navigate(article.tag)">
-        <b-card-body :title="article.title + ': ' + article.subject" >
-            <b-card-text>
-                "{{article.text}}"
-            </b-card-text>
-        </b-card-body>
-        <b-card-footer>
-            <small>{{article.createDate | formatDate }}</small>
-        </b-card-footer>
-    </b-card>
+    <div style="display: flex;">
+        <div v-if="!isPost" style="display:flex">
+            <b-card no-body :img-src="computedImg" @click="navigateToArticle(article.tag)">
+                <b-card-body :title="article.title + ': ' + article.subject" >
+                    <b-card-text>
+                        "{{article.text}}"
+                    </b-card-text>
+                </b-card-body>
+                <b-card-footer>
+                    <small>{{article.createDate | formatDate }}</small>
+                </b-card-footer>
+            </b-card>
+        </div>
+        <div v-if="isPost" style="display: flex;">
+            <b-card no-body :img-src="post.feature_image" @click="navigateToPost(post.slug)">
+                <b-card-body :title="post.title" >
+                    <b-card-text>
+                        "{{post.excerpt}}"
+                    </b-card-text>
+                </b-card-body>
+                <b-card-footer>
+                    <small>{{post.created_at | formatDate }}</small>
+                </b-card-footer>
+            </b-card>
+        </div>
+        </div>
 </template>
 
 <script>
 import { router } from 'vue'
+
 export default {
-    props: {
-        article: {
-            title: String,
-            img: String,
-            text: String
-        }
-    },
+    props: [
+        'article',
+        'post',
+        'isPost'
+    ],
     computed: {
         computedImg() {
-            return require('~/assets/' + this.article.img.replace(/^~\/assets\//g, ''))
+            if (this.article) {
+                return require('~/assets/' + this.article.img.replace(/^~\/assets\//g, ''))
+            }
         }
     },
     methods: {
-        navigate(url) {
+        navigateToArticle(url) {
             this.$router.push({path: 'articles/' + url});
+        },
+        navigateToPost(slug) {
+            this.$router.push({path: slug});
         }
     }
 }
